@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:dream_bridge_app/constants/colors.dart';
 import 'package:dream_bridge_app/wigets/custom_appbar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'personality_result_page.dart';
 
 class PersonalityTestPage extends StatefulWidget {
   final String userId;
-  final void Function(String key) markCompleted; // ✅ callback
+  final void Function(String key) markCompleted;
 
   const PersonalityTestPage({
     super.key,
@@ -20,82 +21,140 @@ class PersonalityTestPage extends StatefulWidget {
 class _PersonalityTestPageState extends State<PersonalityTestPage> {
   int currentQuestion = 0;
   List<String> answers = [];
-  bool isSaving = false; // loading indicator
+  bool isSaving = false;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  // Sample questions for the personality test based on SIAR model
 
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "Do you prefer working alone or in a team?",
-      "options": ["Alone", "Team"],
+      "question": "When solving a problem, you usually:",
+      "options": {
+        "Ask others for help": "S",
+        "Analyze details yourself": "I",
+        "Try creative solutions": "A",
+        "Use practical methods": "R",
+      },
     },
     {
-      "question": "Do you enjoy structured or flexible work?",
-      "options": ["Structured", "Flexible"],
+      "question": "In a group project, your role is usually:",
+      "options": {
+        "Coordinator / motivator": "S",
+        "Researcher / planner": "I",
+        "Designer / idea person": "A",
+        "Task executor": "R",
+      },
     },
     {
-      "question": "Are you more introvert or extrovert?",
-      "options": ["Introvert", "Extrovert"],
+      "question": "Your hobbies are mostly:",
+      "options": {
+        "Volunteering / social activities": "S",
+        "Reading / experiments": "I",
+        "Painting / music / writing": "A",
+        "Sports / DIY / building things": "R",
+      },
     },
     {
-      "question": "Do you prefer practical or theoretical tasks?",
-      "options": ["Practical", "Theoretical"],
+      "question": "When facing a challenge, you prefer:",
+      "options": {
+        "Working with people": "S",
+        "Thinking logically": "I",
+        "Trying something new": "A",
+        "Following step-by-step instructions": "R",
+      },
     },
     {
-      "question": "Do you like taking risks or prefer stability?",
-      "options": ["Risk taking", "Stable"],
+      "question": "Your ideal job environment:",
+      "options": {
+        "Teamwork / helping others": "S",
+        "Research / problem solving": "I",
+        "Creative / flexible": "A",
+        "Hands-on / practical": "R",
+      },
     },
   ];
 
-  void selectAnswer(String answer) {
-    if (currentQuestion >= questions.length) return; // prevent double tap
+  void selectAnswer(String type) {
+    if (currentQuestion >= questions.length) return;
+
     setState(() {
-      answers.add(answer);
-      if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-      } else {
-        savePersonality(); // last question → save
-      }
+      answers.add(type);
     });
-  }
 
-  Future<void> savePersonality() async {
-    setState(() => isSaving = true);
-
-    Map<String, String> result = {};
-    for (int i = 0; i < questions.length; i++) {
-      result["q${i + 1}"] = answers[i];
-    }
-
-    try {
-      await _firestore.collection("users").doc(widget.userId).set({
-        "personality": result,
-        "assessments": {
-          "Personality Test": true, // ✅ mark assessment completed
-        }
-      }, SetOptions(merge: true));
-
-      widget.markCompleted("Personality Test");
-
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Personality test saved successfully!")),
-        );
-        Navigator.pop(context); // back to AssessmentPage
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Error saving personality: $e")),
-        );
-      }
-    } finally {
-      if (mounted) setState(() => isSaving = false);
+    if (currentQuestion < questions.length - 1) {
+      setState(() => currentQuestion++);
+    } else {
+      savePersonalityResult();
     }
   }
 
+  String calculateDominantType() {
+    Map<String, int> counts = {"S": 0, "I": 0, "A": 0, "R": 0};
+    for (var t in answers) {
+      counts[t] = counts[t]! + 1;
+    }
+    return counts.entries.reduce((a, b) => a.value >= b.value ? a : b).key;
+  }
+
+  Future<void> savePersonalityResult() async {
+  setState(() => isSaving = true);
+
+  String dominantType = calculateDominantType();
+
+  try {
+    // Save in a subcollection under the user document
+    await _firestore
+        .collection("students")
+        .doc(widget.userId)
+        .collection("personalityAssessment")
+        .doc("personality_data")
+        .set({
+      "personality_id": "personality_data",
+      "user_id": widget.userId,
+      "type": dominantType,
+    });
+
+    // Optionally, mark the assessment completed in the main student doc
+    await _firestore.collection("students").doc(widget.userId).set(
+      {
+        "assessments": {"Personality Test": true},
+      },
+      SetOptions(merge: true),
+    );
+
+    widget.markCompleted("Personality Test");
+
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => PersonalityResultPage(
+            personalityType: dominantType,
+          ),
+        ),
+      );
+    }
+  } catch (e) {
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Error saving personality: $e")),
+      );
+    }
+  } finally {
+    if (mounted) setState(() => isSaving = false);
+  }
+}
   @override
   Widget build(BuildContext context) {
+    if (currentQuestion >= questions.length) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
+
     final question = questions[currentQuestion];
+    final Map<String, String> options =
+        Map<String, String>.from(question["options"]);
 
     return Scaffold(
       appBar: const CustomAppbar(appbar_title: "Personality Test"),
@@ -108,9 +167,9 @@ class _PersonalityTestPageState extends State<PersonalityTestPage> {
             children: [
               Image.asset(
                 "assets/Images/personality test.jpg",
-                height: 250,
+                height: 170,
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 10),
               Text(
                 "Question ${currentQuestion + 1} of ${questions.length}",
                 style: const TextStyle(
@@ -121,7 +180,8 @@ class _PersonalityTestPageState extends State<PersonalityTestPage> {
               const SizedBox(height: 20),
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+                  borderRadius: BorderRadius.circular(20),
+                ),
                 elevation: 6,
                 color: Colors.white,
                 child: Padding(
@@ -132,12 +192,15 @@ class _PersonalityTestPageState extends State<PersonalityTestPage> {
                       Text(
                         question["question"],
                         style: const TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w600),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                       const SizedBox(height: 30),
-                      ...List.generate(
-                        question["options"].length,
-                        (index) => Padding(
+
+                      // Answer options
+                      ...options.entries.map(
+                        (entry) => Padding(
                           padding: const EdgeInsets.only(bottom: 15),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
@@ -145,22 +208,24 @@ class _PersonalityTestPageState extends State<PersonalityTestPage> {
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(vertical: 15),
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15)),
+                                borderRadius: BorderRadius.circular(15),
+                              ),
                             ),
                             onPressed: isSaving
                                 ? null
-                                : () => selectAnswer(question["options"][index]),
+                                : () => selectAnswer(entry.value),
                             child: Text(
-                              question["options"][index],
+                              entry.key,
                               style: const TextStyle(fontSize: 16),
                             ),
                           ),
                         ),
                       ),
                       if (isSaving)
-                        const Center(
-                          child: CircularProgressIndicator(
-                            color: kMainGTeal1,
+                        const Padding(
+                          padding: EdgeInsets.only(top: 15),
+                          child: Center(
+                            child: CircularProgressIndicator(color: kMainGTeal1),
                           ),
                         ),
                     ],
@@ -168,7 +233,6 @@ class _PersonalityTestPageState extends State<PersonalityTestPage> {
                 ),
               ),
               const SizedBox(height: 30),
-              // Dot Indicator
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(

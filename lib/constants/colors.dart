@@ -7,6 +7,7 @@ const kMainDarkBlue = Color(0xff050167);
 const kMainTeal2 = Color(0xff024E5B);
 const kMainTeal3= Color(0xff30B2BE);
 const kMainTeal4= Color(0xffA7EBF2);
+const kpurple = Color.fromARGB(255, 190, 50, 197);
 
 
 //letters colours

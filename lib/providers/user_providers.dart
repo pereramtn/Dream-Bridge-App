@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 
 
 class UserProvider extends ChangeNotifier {
-  UserModel? user;
+  StudentModel? student;
 
-  void setUser(UserModel newUser) {
-    user = newUser;
+  void setUser(StudentModel newUser) {
+    student = newUser;
     notifyListeners();
   }
 
   void clearUser() {
-    user = null;
+    student = null;
     notifyListeners();
   }
 
-  bool get isLoggedIn => user != null;
+  bool get isLoggedIn => student != null;
 }

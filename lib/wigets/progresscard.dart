@@ -30,12 +30,8 @@ class _ProgressCardState extends State<ProgressCard> {
           colors: [kMainTeal3, kbtnBlue],
         ),
         boxShadow: [
-        BoxShadow(
-          color: Colors.black,
-          offset: Offset(0,2),
-          blurRadius: 2,
-        )
-      ]
+          BoxShadow(color: Colors.black, offset: Offset(0, 2), blurRadius: 2),
+        ],
       ),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -80,7 +76,6 @@ class _ProgressCardState extends State<ProgressCard> {
                 _buidTag("Total", widget.total.toString()),
               ],
             ),
-            
           ],
         ),
       ),

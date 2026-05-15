@@ -1,0 +1,501 @@
+ol_mathamatics,ol_science,ol_english,al_stream,interest_type,personal_skill_score,aptitude_test_score,personality_type,career_category,recommended_career_1,recommended_career_2,recommended_career_3
+C,S,B,Arts,Enterprising,15,3,A,Education & Social Services,Social Worker,Teacher,Librarian
+C,A,A,Biological Science,Social,86,51,I,Clinical & Healthcare Services,Nurse,Clinical Psychologist,Physiotherapist
+B,A,B,Mathematics,Conventional,61,63,I,Data Management & Cyber Security,Network Security Engineer,BI Analyst,Cybersecurity Specialist
+B,C,C,Biological Science,Investigative,65,4,I,Biomedical & Laboratory Research,Pharmacologist,Immunologist,Geneticist
+A,C,A,Biological Science,Investigative,74,85,S,Clinical & Healthcare Services,Physiotherapist,Physician,Nurse
+B,B,A,Arts,Enterprising,71,28,A,Media & Communication,Content Writer,Journalist,Broadcaster
+B,C,S,Tech,Realistic,82,85,I,IT Support & Training,Network Administrator,Technical Trainer,IT Support Specialist
+C,C,A,Arts,Artistic,14,5,S,Education & Social Services,Counselor,Librarian,NGO Officer
+C,S,B,Commerce,Conventional,46,73,E,Business Management & Strategy,Business Manager,Operations Manager,Project Manager
+S,C,S,Commerce,Enterprising,49,46,E,Business Management & Strategy,Entrepreneur,HR Manager,Project Manager
+A,A,B,Biological Science,Social,27,65,S,Environmental & Field Science,Wildlife Biologist,Environmental Scientist,Marine Biologist
+C,S,A,Commerce,Enterprising,63,89,S,Business Management & Strategy,Entrepreneur,Project Manager,HR Manager
+S,B,S,Commerce,Conventional,16,21,S,Marketing & Sales,Marketing Executive,Market Research Analyst,Digital Marketer
+C,A,B,Tech,Realistic,70,53,I,IT Support & Training,IT Support Specialist,Helpdesk Technician,Technical Trainer
+C,B,S,Biological Science,Social,33,0,I,Environmental & Field Science,Marine Biologist,Ecologist,Conservation Officer
+C,B,C,Commerce,Enterprising,45,11,E,Business Management & Strategy,Business Manager,Entrepreneur,Operations Manager
+A,A,A,Mathematics,Investigative,0,64,I,Engineering & Technical Operations,Civil Engineer,Mechanical Engineer,Robotics Engineer
+B,C,A,Mathematics,Realistic,70,67,R,Software & Systems,Database Administrator,Systems Analyst,Web Developer
+C,B,B,Biological Science,Investigative,33,36,S,Environmental & Field Science,Wildlife Biologist,Environmental Scientist,Marine Biologist
+B,C,B,Commerce,Social,78,58,E,Accounting & Finance,Tax Consultant,Investment Banker,Accountant
+C,C,C,Arts,Enterprising,84,34,S,Media & Communication,Social Media Manager,Public Relations Officer,Journalist
+B,A,A,Mathematics,Investigative,95,28,R,Software & Systems,Systems Analyst,Software Developer,Database Administrator
+B,A,A,Biological Science,Social,75,72,I,Clinical & Healthcare Services,Physician,Physiotherapist,Occupational Therapist
+C,B,B,Tech,Realistic,35,18,R,Digital Media & Creative Technology,UI/UX Designer,AR/VR Developer,Multimedia Artist
+B,B,C,Commerce,Conventional,83,60,E,Accounting & Finance,Auditor,Investment Banker,Tax Consultant
+C,C,B,Biological Science,Social,62,58,S,Biomedical & Laboratory Research,Pharmacologist,Microbiologist,Biomedical Scientist
+A,C,S,Biological Science,Social,98,22,S,Clinical & Healthcare Services,Physiotherapist,Clinical Psychologist,Physician
+A,A,B,Tech,Conventional,50,71,R,Technology Business & Startups,Startup Founder,Product Manager,Tech Consultant
+B,C,A,Arts,Enterprising,62,48,A,Creative & Performing Arts,Actor,Graphic Designer,Musician
+S,C,S,Arts,Enterprising,16,57,A,Education & Social Services,Teacher,NGO Officer,Counselor
+B,B,C,Tech,Realistic,96,4,I,IT Support & Training,IT Support Specialist,Network Administrator,System Operator
+C,C,A,Tech,Investigative,67,5,I,Technology Business & Startups,Innovation Manager,Tech Consultant,Business Analyst (Tech)
+A,C,C,Mathematics,Realistic,63,47,I,Data Management & Cyber Security,Network Security Engineer,Database Architect,BI Analyst
+B,S,A,Arts,Social,10,64,S,Education & Social Services,Social Worker,Counselor,Teacher
+C,C,B,Commerce,Enterprising,24,95,E,Marketing & Sales,Digital Marketer,Sales Manager,Brand Manager
+B,B,S,Commerce,Social,76,1,S,Accounting & Finance,Tax Consultant,Auditor,Investment Banker
+S,B,S,Commerce,Social,42,81,S,Business Management & Strategy,Business Manager,HR Manager,Project Manager
+C,C,S,Biological Science,Social,84,20,S,Clinical & Healthcare Services,Occupational Therapist,Clinical Psychologist,Physiotherapist
+B,B,S,Arts,Social,61,72,S,Creative & Performing Arts,Fashion Designer,Animator,Musician
+C,B,S,Tech,Conventional,92,77,I,IT Support & Training,Helpdesk Technician,Network Administrator,IT Support Specialist
+A,C,C,Tech,Realistic,18,18,R,Digital Media & Creative Technology,AR/VR Developer,Game Developer,Multimedia Artist
+A,B,A,Biological Science,Investigative,93,45,S,Clinical & Healthcare Services,Nurse,Physician,Physiotherapist
+C,C,S,Mathematics,Realistic,100,96,I,Software & Systems,Database Administrator,Software Developer,Systems Analyst
+A,B,A,Mathematics,Conventional,62,92,I,Data Management & Cyber Security,BI Analyst,Database Architect,Network Security Engineer
+C,C,B,Mathematics,Conventional,23,53,I,Engineering & Technical Operations,Civil Engineer,Industrial Engineer,Electrical Engineer
+B,B,A,Mathematics,Conventional,0,20,I,Engineering & Technical Operations,Electrical Engineer,Civil Engineer,Industrial Engineer
+B,C,A,Mathematics,Investigative,78,67,R,Software & Systems,AI/ML Engineer,Systems Analyst,Software Developer
+B,S,A,Commerce,Social,29,12,E,Marketing & Sales,Digital Marketer,Marketing Executive,Brand Manager
+C,A,B,Mathematics,Investigative,62,58,R,Data Management & Cyber Security,Data Analyst,Network Security Engineer,Database Architect
+B,A,A,Mathematics,Investigative,3,15,R,Engineering & Technical Operations,Industrial Engineer,Electrical Engineer,Civil Engineer
+S,C,C,Arts,Social,97,46,A,Media & Communication,Broadcaster,Public Relations Officer,Social Media Manager
+A,A,B,Mathematics,Conventional,15,52,I,Engineering & Technical Operations,Industrial Engineer,Robotics Engineer,Civil Engineer
+S,C,B,Arts,Artistic,30,38,A,Education & Social Services,Counselor,NGO Officer,Teacher
+B,S,A,Arts,Enterprising,2,22,S,Education & Social Services,Teacher,NGO Officer,Counselor
+B,B,A,Tech,Realistic,7,71,R,Digital Media & Creative Technology,AR/VR Developer,Multimedia Artist,Mobile App Developer
+B,C,C,Mathematics,Realistic,14,53,I,Engineering & Technical Operations,Industrial Engineer,Civil Engineer,Electrical Engineer
+A,A,B,Biological Science,Investigative,43,18,I,Biomedical & Laboratory Research,Microbiologist,Biomedical Scientist,Immunologist
+C,S,S,Commerce,Enterprising,48,57,S,Business Management & Strategy,Project Manager,Operations Manager,Business Manager
+C,A,B,Tech,Conventional,63,99,R,Technology Business & Startups,Product Manager,Tech Consultant,Business Analyst (Tech)
+B,B,S,Biological Science,Investigative,1,60,I,Environmental & Field Science,Ecologist,Marine Biologist,Conservation Officer
+B,C,C,Arts,Artistic,54,72,A,Creative & Performing Arts,Actor,Animator,Fashion Designer
+C,A,S,Biological Science,Investigative,25,77,S,Environmental & Field Science,Conservation Officer,Wildlife Biologist,Environmental Scientist
+S,S,A,Arts,Enterprising,81,68,A,Media & Communication,Journalist,Content Writer,Broadcaster
+C,C,C,Commerce,Social,81,82,E,Accounting & Finance,Investment Banker,Auditor,Financial Analyst
+C,B,B,Mathematics,Realistic,59,35,I,Data Management & Cyber Security,Database Architect,BI Analyst,Network Security Engineer
+B,B,C,Mathematics,Conventional,85,39,R,Software & Systems,Database Administrator,Systems Analyst,AI/ML Engineer
+C,S,C,Commerce,Enterprising,48,4,S,Business Management & Strategy,Business Manager,Entrepreneur,HR Manager
+C,A,C,Mathematics,Realistic,100,21,I,Software & Systems,Web Developer,Software Developer,Database Administrator
+A,B,A,Tech,Conventional,14,2,R,Digital Media & Creative Technology,Game Developer,AR/VR Developer,Multimedia Artist
+C,C,S,Commerce,Enterprising,23,73,E,Marketing & Sales,Brand Manager,Marketing Executive,Market Research Analyst
+B,C,S,Commerce,Social,94,72,S,Accounting & Finance,Auditor,Financial Analyst,Tax Consultant
+S,B,A,Commerce,Conventional,84,75,E,Accounting & Finance,Accountant,Financial Analyst,Investment Banker
+B,B,C,Tech,Investigative,44,87,R,Technology Business & Startups,Tech Consultant,Startup Founder,Business Analyst (Tech)
+C,A,S,Mathematics,Conventional,89,85,I,Software & Systems,Systems Analyst,Database Administrator,Software Developer
+C,A,C,Biological Science,Social,23,2,I,Environmental & Field Science,Conservation Officer,Marine Biologist,Ecologist
+C,C,B,Mathematics,Conventional,89,2,I,Software & Systems,Database Administrator,Software Developer,Systems Analyst
+B,B,C,Tech,Conventional,52,42,R,Technology Business & Startups,Tech Consultant,Product Manager,Startup Founder
+B,A,B,Mathematics,Conventional,48,68,I,Data Management & Cyber Security,Database Architect,Network Security Engineer,Data Analyst
+B,C,A,Mathematics,Realistic,100,55,R,Software & Systems,Systems Analyst,Web Developer,AI/ML Engineer
+B,C,B,Mathematics,Investigative,31,32,R,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Industrial Engineer
+B,C,B,Tech,Realistic,18,83,I,Digital Media & Creative Technology,Mobile App Developer,Multimedia Artist,Game Developer
+C,B,C,Mathematics,Conventional,73,45,I,Software & Systems,AI/ML Engineer,Web Developer,Software Developer
+A,A,B,Mathematics,Conventional,61,63,I,Data Management & Cyber Security,Database Architect,Data Analyst,Cybersecurity Specialist
+B,C,B,Commerce,Conventional,69,84,E,Business Management & Strategy,Project Manager,Entrepreneur,Business Manager
+B,C,C,Mathematics,Realistic,63,59,R,Data Management & Cyber Security,BI Analyst,Database Architect,Data Analyst
+C,A,B,Biological Science,Social,52,58,I,Biomedical & Laboratory Research,Biomedical Scientist,Pharmacologist,Geneticist
+B,A,C,Biological Science,Investigative,8,15,S,Environmental & Field Science,Wildlife Biologist,Ecologist,Conservation Officer
+S,S,B,Arts,Social,85,69,S,Media & Communication,Content Writer,Social Media Manager,Broadcaster
+C,S,A,Arts,Artistic,52,58,A,Creative & Performing Arts,Fashion Designer,Actor,Musician
+A,A,C,Mathematics,Investigative,55,56,I,Data Management & Cyber Security,Database Architect,Data Analyst,Network Security Engineer
+B,B,B,Arts,Artistic,51,79,S,Creative & Performing Arts,Actor,Musician,Animator
+A,B,B,Biological Science,Social,5,57,I,Environmental & Field Science,Ecologist,Conservation Officer,Wildlife Biologist
+C,A,A,Biological Science,Social,54,45,S,Biomedical & Laboratory Research,Biomedical Scientist,Microbiologist,Pharmacologist
+A,C,C,Mathematics,Realistic,4,20,R,Engineering & Technical Operations,Mechanical Engineer,Electrical Engineer,Robotics Engineer
+C,B,B,Mathematics,Realistic,66,97,I,Data Management & Cyber Security,Database Architect,Data Analyst,BI Analyst
+C,C,S,Commerce,Enterprising,37,46,E,Marketing & Sales,Market Research Analyst,Digital Marketer,Sales Manager
+B,C,B,Mathematics,Investigative,33,52,R,Engineering & Technical Operations,Civil Engineer,Robotics Engineer,Mechanical Engineer
+C,B,B,Biological Science,Investigative,67,91,I,Biomedical & Laboratory Research,Biomedical Scientist,Microbiologist,Geneticist
+B,A,B,Mathematics,Realistic,42,49,I,Data Management & Cyber Security,Cybersecurity Specialist,Database Architect,BI Analyst
+S,S,A,Commerce,Enterprising,9,85,S,Marketing & Sales,Brand Manager,Market Research Analyst,Sales Manager
+B,C,A,Tech,Conventional,48,100,I,Technology Business & Startups,Product Manager,Tech Consultant,Business Analyst (Tech)
+S,C,A,Commerce,Enterprising,84,18,S,Accounting & Finance,Financial Analyst,Tax Consultant,Auditor
+B,C,C,Commerce,Social,11,73,S,Marketing & Sales,Sales Manager,Brand Manager,Marketing Executive
+B,B,S,Commerce,Enterprising,37,65,E,Marketing & Sales,Marketing Executive,Digital Marketer,Brand Manager
+A,A,S,Tech,Conventional,43,17,I,Technology Business & Startups,Product Manager,Startup Founder,Business Analyst (Tech)
+C,B,S,Mathematics,Investigative,35,66,R,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Industrial Engineer
+A,C,A,Biological Science,Investigative,70,97,I,Clinical & Healthcare Services,Clinical Psychologist,Occupational Therapist,Physiotherapist
+S,S,S,Arts,Social,24,8,A,Education & Social Services,Social Worker,Counselor,NGO Officer
+C,A,S,Biological Science,Investigative,39,92,I,Environmental & Field Science,Marine Biologist,Ecologist,Wildlife Biologist
+C,B,S,Tech,Investigative,63,22,I,Technology Business & Startups,Tech Consultant,Innovation Manager,Startup Founder
+C,S,B,Commerce,Conventional,64,37,S,Business Management & Strategy,HR Manager,Entrepreneur,Operations Manager
+C,S,A,Arts,Artistic,34,49,S,Education & Social Services,Social Worker,NGO Officer,Counselor
+C,C,A,Tech,Realistic,8,26,R,Digital Media & Creative Technology,UI/UX Designer,Multimedia Artist,Game Developer
+A,C,C,Mathematics,Conventional,15,86,R,Engineering & Technical Operations,Mechanical Engineer,Robotics Engineer,Electrical Engineer
+A,C,C,Tech,Conventional,69,43,I,Technology Business & Startups,Innovation Manager,Tech Consultant,Product Manager
+B,B,C,Biological Science,Social,100,72,I,Clinical & Healthcare Services,Occupational Therapist,Clinical Psychologist,Physician
+B,S,B,Arts,Social,66,64,A,Creative & Performing Arts,Musician,Fashion Designer,Actor
+A,B,S,Tech,Investigative,30,95,R,Digital Media & Creative Technology,UI/UX Designer,Multimedia Artist,Game Developer
+A,B,S,Tech,Conventional,55,22,I,Technology Business & Startups,Innovation Manager,Startup Founder,Tech Consultant
+A,C,C,Mathematics,Investigative,52,55,I,Data Management & Cyber Security,Data Analyst,Network Security Engineer,Cybersecurity Specialist
+C,C,A,Tech,Conventional,66,24,R,Technology Business & Startups,Tech Consultant,Product Manager,Startup Founder
+C,C,S,Tech,Conventional,100,47,I,IT Support & Training,Helpdesk Technician,IT Support Specialist,Technical Trainer
+C,S,B,Arts,Social,59,74,S,Creative & Performing Arts,Fashion Designer,Animator,Musician
+B,S,B,Commerce,Social,63,51,E,Business Management & Strategy,Operations Manager,Project Manager,Business Manager
+C,B,B,Tech,Investigative,49,12,I,Technology Business & Startups,Startup Founder,Tech Consultant,Product Manager
+A,C,S,Mathematics,Realistic,36,23,R,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Electrical Engineer
+C,C,B,Commerce,Enterprising,40,3,S,Business Management & Strategy,Operations Manager,Project Manager,HR Manager
+C,B,S,Biological Science,Investigative,31,81,S,Environmental & Field Science,Marine Biologist,Conservation Officer,Ecologist
+B,A,A,Biological Science,Social,19,79,I,Environmental & Field Science,Marine Biologist,Conservation Officer,Wildlife Biologist
+B,C,S,Mathematics,Conventional,18,14,I,Engineering & Technical Operations,Robotics Engineer,Electrical Engineer,Industrial Engineer
+A,B,S,Mathematics,Conventional,33,60,R,Engineering & Technical Operations,Industrial Engineer,Electrical Engineer,Robotics Engineer
+B,B,B,Mathematics,Investigative,37,23,I,Engineering & Technical Operations,Civil Engineer,Mechanical Engineer,Robotics Engineer
+C,B,S,Mathematics,Realistic,74,20,R,Software & Systems,Software Developer,Database Administrator,AI/ML Engineer
+S,B,B,Commerce,Enterprising,88,23,E,Accounting & Finance,Auditor,Accountant,Financial Analyst
+C,B,S,Tech,Realistic,49,85,I,Technology Business & Startups,Innovation Manager,Tech Consultant,Startup Founder
+B,C,C,Biological Science,Social,98,11,I,Clinical & Healthcare Services,Nurse,Physician,Occupational Therapist
+C,A,C,Tech,Realistic,53,94,R,Technology Business & Startups,Product Manager,Startup Founder,Innovation Manager
+B,A,S,Mathematics,Realistic,8,70,R,Engineering & Technical Operations,Industrial Engineer,Electrical Engineer,Robotics Engineer
+B,S,S,Arts,Social,79,54,A,Media & Communication,Broadcaster,Content Writer,Public Relations Officer
+A,B,A,Tech,Conventional,13,74,I,Digital Media & Creative Technology,Mobile App Developer,Game Developer,Multimedia Artist
+A,C,B,Mathematics,Conventional,14,85,I,Engineering & Technical Operations,Industrial Engineer,Civil Engineer,Mechanical Engineer
+S,S,A,Arts,Artistic,19,25,S,Education & Social Services,NGO Officer,Librarian,Teacher
+B,C,S,Commerce,Social,27,14,E,Marketing & Sales,Sales Manager,Brand Manager,Market Research Analyst
+B,A,A,Mathematics,Realistic,63,51,R,Data Management & Cyber Security,Data Analyst,Network Security Engineer,Cybersecurity Specialist
+C,C,B,Biological Science,Social,57,18,I,Biomedical & Laboratory Research,Biomedical Scientist,Geneticist,Microbiologist
+B,C,S,Arts,Artistic,0,33,S,Education & Social Services,Social Worker,Teacher,NGO Officer
+B,B,C,Mathematics,Realistic,83,52,I,Software & Systems,AI/ML Engineer,Software Developer,Web Developer
+B,C,A,Tech,Realistic,87,65,I,IT Support & Training,IT Support Specialist,Technical Trainer,Network Administrator
+B,C,C,Mathematics,Realistic,0,36,R,Engineering & Technical Operations,Civil Engineer,Robotics Engineer,Industrial Engineer
+B,S,A,Arts,Artistic,27,21,A,Education & Social Services,Librarian,Teacher,NGO Officer
+B,A,B,Tech,Conventional,60,34,I,Technology Business & Startups,Product Manager,Tech Consultant,Business Analyst (Tech)
+B,A,B,Tech,Realistic,39,58,I,Digital Media & Creative Technology,Game Developer,Mobile App Developer,Multimedia Artist
+A,C,S,Tech,Realistic,69,88,I,Technology Business & Startups,Startup Founder,Tech Consultant,Business Analyst (Tech)
+C,A,B,Mathematics,Investigative,71,45,I,Software & Systems,Web Developer,Systems Analyst,Software Developer
+A,A,B,Biological Science,Investigative,14,96,S,Environmental & Field Science,Marine Biologist,Ecologist,Conservation Officer
+B,B,B,Commerce,Enterprising,10,82,S,Marketing & Sales,Marketing Executive,Digital Marketer,Brand Manager
+C,S,A,Commerce,Enterprising,60,91,E,Business Management & Strategy,Entrepreneur,Operations Manager,Business Manager
+B,S,B,Arts,Enterprising,21,62,S,Education & Social Services,Counselor,NGO Officer,Librarian
+A,C,B,Mathematics,Investigative,56,37,I,Data Management & Cyber Security,Cybersecurity Specialist,Data Analyst,Network Security Engineer
+C,A,C,Tech,Conventional,90,75,I,IT Support & Training,IT Support Specialist,Helpdesk Technician,Technical Trainer
+A,C,C,Tech,Conventional,4,57,R,Digital Media & Creative Technology,UI/UX Designer,Game Developer,Mobile App Developer
+S,C,C,Commerce,Conventional,59,76,S,Business Management & Strategy,Entrepreneur,Operations Manager,HR Manager
+C,C,A,Tech,Investigative,94,99,R,IT Support & Training,IT Support Specialist,Helpdesk Technician,Network Administrator
+B,C,B,Biological Science,Social,56,33,I,Biomedical & Laboratory Research,Biomedical Scientist,Microbiologist,Geneticist
+A,B,S,Biological Science,Social,60,90,S,Biomedical & Laboratory Research,Immunologist,Biomedical Scientist,Pharmacologist
+A,A,A,Biological Science,Social,14,35,I,Environmental & Field Science,Wildlife Biologist,Environmental Scientist,Conservation Officer
+A,B,C,Biological Science,Investigative,13,100,S,Environmental & Field Science,Environmental Scientist,Ecologist,Conservation Officer
+C,B,C,Arts,Enterprising,95,5,A,Media & Communication,Social Media Manager,Journalist,Broadcaster
+C,A,C,Tech,Conventional,0,82,I,Digital Media & Creative Technology,Multimedia Artist,UI/UX Designer,Game Developer
+A,A,A,Biological Science,Social,6,87,S,Environmental & Field Science,Marine Biologist,Conservation Officer,Ecologist
+C,C,A,Biological Science,Investigative,7,80,I,Environmental & Field Science,Wildlife Biologist,Environmental Scientist,Marine Biologist
+B,B,S,Tech,Realistic,77,95,R,IT Support & Training,Helpdesk Technician,Network Administrator,System Operator
+C,A,A,Mathematics,Realistic,86,90,R,Software & Systems,AI/ML Engineer,Systems Analyst,Database Administrator
+B,A,A,Tech,Investigative,13,72,I,Digital Media & Creative Technology,UI/UX Designer,Game Developer,AR/VR Developer
+B,C,C,Commerce,Conventional,87,66,S,Accounting & Finance,Auditor,Tax Consultant,Investment Banker
+B,B,C,Mathematics,Conventional,35,57,R,Engineering & Technical Operations,Electrical Engineer,Industrial Engineer,Mechanical Engineer
+C,C,A,Mathematics,Realistic,18,27,I,Engineering & Technical Operations,Robotics Engineer,Industrial Engineer,Electrical Engineer
+B,B,S,Arts,Enterprising,91,73,S,Media & Communication,Journalist,Public Relations Officer,Content Writer
+C,A,C,Biological Science,Social,20,32,S,Environmental & Field Science,Environmental Scientist,Wildlife Biologist,Conservation Officer
+B,A,C,Biological Science,Social,58,27,I,Biomedical & Laboratory Research,Microbiologist,Geneticist,Pharmacologist
+S,B,B,Arts,Social,74,72,A,Media & Communication,Content Writer,Broadcaster,Public Relations Officer
+B,B,A,Tech,Investigative,85,0,R,IT Support & Training,Technical Trainer,System Operator,IT Support Specialist
+A,A,B,Mathematics,Conventional,84,84,I,Software & Systems,AI/ML Engineer,Database Administrator,Web Developer
+B,B,A,Commerce,Conventional,17,59,E,Marketing & Sales,Digital Marketer,Marketing Executive,Brand Manager
+B,C,B,Tech,Investigative,71,73,I,IT Support & Training,IT Support Specialist,Technical Trainer,Helpdesk Technician
+B,A,A,Mathematics,Conventional,85,26,R,Software & Systems,Database Administrator,AI/ML Engineer,Software Developer
+C,B,S,Tech,Conventional,55,60,R,Technology Business & Startups,Tech Consultant,Startup Founder,Innovation Manager
+S,S,C,Commerce,Social,3,7,E,Marketing & Sales,Marketing Executive,Digital Marketer,Brand Manager
+S,B,A,Commerce,Enterprising,48,72,E,Business Management & Strategy,HR Manager,Operations Manager,Business Manager
+B,S,A,Commerce,Enterprising,7,51,S,Marketing & Sales,Marketing Executive,Brand Manager,Digital Marketer
+B,B,S,Mathematics,Investigative,22,13,I,Engineering & Technical Operations,Electrical Engineer,Industrial Engineer,Robotics Engineer
+B,A,B,Tech,Conventional,72,84,R,IT Support & Training,System Operator,Network Administrator,Technical Trainer
+S,C,C,Commerce,Social,42,79,E,Business Management & Strategy,Entrepreneur,Business Manager,Project Manager
+S,S,C,Arts,Enterprising,62,20,A,Creative & Performing Arts,Actor,Graphic Designer,Animator
+B,C,B,Tech,Investigative,100,8,R,IT Support & Training,IT Support Specialist,Technical Trainer,Network Administrator
+A,A,B,Mathematics,Conventional,26,32,R,Engineering & Technical Operations,Robotics Engineer,Industrial Engineer,Electrical Engineer
+B,C,B,Commerce,Social,80,27,S,Accounting & Finance,Auditor,Tax Consultant,Accountant
+C,A,B,Mathematics,Investigative,4,71,R,Engineering & Technical Operations,Mechanical Engineer,Robotics Engineer,Electrical Engineer
+B,A,C,Mathematics,Realistic,8,68,I,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Electrical Engineer
+B,A,A,Tech,Realistic,61,84,I,Technology Business & Startups,Product Manager,Startup Founder,Tech Consultant
+B,C,C,Commerce,Social,14,78,E,Marketing & Sales,Digital Marketer,Market Research Analyst,Marketing Executive
+C,A,B,Mathematics,Investigative,43,23,R,Data Management & Cyber Security,Network Security Engineer,Cybersecurity Specialist,BI Analyst
+S,B,A,Commerce,Enterprising,33,35,S,Marketing & Sales,Brand Manager,Sales Manager,Marketing Executive
+A,A,B,Tech,Realistic,99,88,R,IT Support & Training,IT Support Specialist,Network Administrator,System Operator
+C,B,B,Arts,Enterprising,4,89,A,Education & Social Services,Teacher,NGO Officer,Librarian
+B,C,C,Arts,Enterprising,15,94,S,Education & Social Services,Counselor,NGO Officer,Librarian
+B,A,B,Biological Science,Investigative,84,99,S,Clinical & Healthcare Services,Physician,Nurse,Physiotherapist
+B,C,S,Commerce,Enterprising,38,9,S,Marketing & Sales,Market Research Analyst,Sales Manager,Digital Marketer
+A,A,S,Mathematics,Conventional,4,11,I,Engineering & Technical Operations,Robotics Engineer,Electrical Engineer,Civil Engineer
+A,B,A,Biological Science,Social,22,33,I,Environmental & Field Science,Marine Biologist,Conservation Officer,Ecologist
+A,A,B,Mathematics,Realistic,5,22,I,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Electrical Engineer
+A,B,B,Mathematics,Investigative,73,45,I,Software & Systems,Database Administrator,AI/ML Engineer,Systems Analyst
+A,B,A,Biological Science,Social,24,40,I,Environmental & Field Science,Ecologist,Conservation Officer,Environmental Scientist
+B,C,B,Arts,Enterprising,13,57,S,Education & Social Services,NGO Officer,Counselor,Teacher
+C,C,S,Arts,Artistic,95,15,A,Media & Communication,Broadcaster,Social Media Manager,Public Relations Officer
+C,A,C,Biological Science,Social,68,35,S,Biomedical & Laboratory Research,Microbiologist,Pharmacologist,Biomedical Scientist
+B,S,C,Commerce,Social,29,41,E,Marketing & Sales,Market Research Analyst,Sales Manager,Brand Manager
+C,C,S,Arts,Enterprising,51,76,S,Creative & Performing Arts,Graphic Designer,Fashion Designer,Actor
+S,B,B,Arts,Enterprising,82,48,S,Media & Communication,Public Relations Officer,Content Writer,Journalist
+A,C,S,Tech,Conventional,2,42,I,Digital Media & Creative Technology,Game Developer,Multimedia Artist,UI/UX Designer
+B,S,S,Commerce,Social,8,9,E,Marketing & Sales,Market Research Analyst,Sales Manager,Marketing Executive
+B,A,S,Mathematics,Investigative,61,77,I,Data Management & Cyber Security,Cybersecurity Specialist,Data Analyst,Network Security Engineer
+B,B,A,Biological Science,Investigative,99,4,S,Clinical & Healthcare Services,Physician,Nurse,Occupational Therapist
+S,C,B,Arts,Social,4,83,S,Education & Social Services,NGO Officer,Teacher,Counselor
+S,C,B,Arts,Artistic,8,92,A,Education & Social Services,Teacher,Librarian,NGO Officer
+C,C,B,Arts,Social,93,93,S,Media & Communication,Content Writer,Public Relations Officer,Broadcaster
+A,C,A,Biological Science,Investigative,47,38,S,Biomedical & Laboratory Research,Biomedical Scientist,Geneticist,Immunologist
+A,C,B,Biological Science,Social,29,1,S,Environmental & Field Science,Conservation Officer,Environmental Scientist,Wildlife Biologist
+B,C,B,Mathematics,Conventional,21,24,I,Engineering & Technical Operations,Mechanical Engineer,Electrical Engineer,Industrial Engineer
+B,B,S,Mathematics,Realistic,23,7,R,Engineering & Technical Operations,Robotics Engineer,Mechanical Engineer,Electrical Engineer
+B,B,A,Arts,Artistic,11,61,A,Education & Social Services,Teacher,NGO Officer,Social Worker
+S,B,B,Arts,Social,51,91,A,Creative & Performing Arts,Actor,Fashion Designer,Musician
+C,B,A,Tech,Investigative,44,97,R,Technology Business & Startups,Innovation Manager,Tech Consultant,Startup Founder
+C,S,C,Arts,Artistic,16,35,A,Education & Social Services,Librarian,Counselor,Social Worker
+S,S,C,Arts,Social,95,33,A,Media & Communication,Public Relations Officer,Content Writer,Social Media Manager
+S,S,A,Commerce,Social,14,94,E,Marketing & Sales,Marketing Executive,Sales Manager,Brand Manager
+A,C,C,Biological Science,Social,99,6,I,Clinical & Healthcare Services,Clinical Psychologist,Physician,Physiotherapist
+S,S,B,Arts,Artistic,63,7,A,Creative & Performing Arts,Graphic Designer,Actor,Fashion Designer
+B,C,C,Arts,Social,31,21,A,Education & Social Services,Social Worker,Librarian,Teacher
+B,B,S,Arts,Artistic,78,93,A,Media & Communication,Broadcaster,Public Relations Officer,Journalist
+C,A,S,Biological Science,Investigative,53,3,I,Biomedical & Laboratory Research,Microbiologist,Immunologist,Geneticist
+B,A,B,Mathematics,Realistic,88,11,I,Software & Systems,Web Developer,AI/ML Engineer,Systems Analyst
+C,S,C,Commerce,Enterprising,1,64,S,Marketing & Sales,Brand Manager,Sales Manager,Marketing Executive
+C,B,A,Arts,Artistic,69,41,A,Creative & Performing Arts,Graphic Designer,Fashion Designer,Animator
+C,A,A,Biological Science,Social,23,58,I,Environmental & Field Science,Wildlife Biologist,Environmental Scientist,Marine Biologist
+C,B,B,Tech,Investigative,91,17,I,IT Support & Training,Helpdesk Technician,Network Administrator,Technical Trainer
+C,B,A,Biological Science,Investigative,68,56,S,Biomedical & Laboratory Research,Pharmacologist,Geneticist,Biomedical Scientist
+C,C,S,Tech,Conventional,26,99,I,Digital Media & Creative Technology,Game Developer,Mobile App Developer,UI/UX Designer
+C,C,B,Arts,Artistic,58,34,S,Creative & Performing Arts,Actor,Graphic Designer,Musician
+C,A,S,Biological Science,Social,8,89,I,Environmental & Field Science,Conservation Officer,Environmental Scientist,Ecologist
+S,C,C,Arts,Enterprising,8,38,S,Education & Social Services,Teacher,Librarian,NGO Officer
+B,C,C,Commerce,Enterprising,92,73,S,Accounting & Finance,Financial Analyst,Auditor,Tax Consultant
+B,S,C,Commerce,Enterprising,71,7,E,Accounting & Finance,Auditor,Tax Consultant,Financial Analyst
+B,B,A,Commerce,Social,77,56,E,Accounting & Finance,Investment Banker,Financial Analyst,Tax Consultant
+B,B,S,Arts,Artistic,18,67,S,Education & Social Services,Teacher,Counselor,Librarian
+A,B,A,Biological Science,Investigative,24,24,I,Environmental & Field Science,Conservation Officer,Wildlife Biologist,Marine Biologist
+C,B,S,Biological Science,Investigative,59,9,I,Biomedical & Laboratory Research,Biomedical Scientist,Microbiologist,Immunologist
+C,C,B,Arts,Artistic,19,70,A,Education & Social Services,Counselor,Teacher,NGO Officer
+C,S,A,Arts,Artistic,31,96,A,Education & Social Services,Social Worker,NGO Officer,Counselor
+C,C,C,Tech,Investigative,96,15,I,IT Support & Training,Helpdesk Technician,IT Support Specialist,Network Administrator
+C,B,S,Tech,Conventional,68,6,R,Technology Business & Startups,Startup Founder,Innovation Manager,Product Manager
+C,C,S,Commerce,Social,25,9,S,Marketing & Sales,Digital Marketer,Marketing Executive,Market Research Analyst
+C,A,B,Biological Science,Social,5,20,I,Environmental & Field Science,Marine Biologist,Ecologist,Wildlife Biologist
+B,A,A,Tech,Investigative,39,97,I,Digital Media & Creative Technology,Multimedia Artist,Game Developer,UI/UX Designer
+B,C,B,Arts,Social,16,51,A,Education & Social Services,NGO Officer,Teacher,Librarian
+C,C,B,Arts,Artistic,99,62,A,Media & Communication,Broadcaster,Social Media Manager,Journalist
+B,C,A,Biological Science,Investigative,88,12,I,Clinical & Healthcare Services,Physician,Clinical Psychologist,Nurse
+B,B,C,Tech,Realistic,19,38,I,Digital Media & Creative Technology,Multimedia Artist,AR/VR Developer,UI/UX Designer
+A,A,C,Tech,Realistic,20,98,R,Digital Media & Creative Technology,Game Developer,UI/UX Designer,Mobile App Developer
+A,C,S,Mathematics,Investigative,74,62,I,Software & Systems,Web Developer,Systems Analyst,Database Administrator
+S,C,S,Commerce,Enterprising,75,50,E,Accounting & Finance,Accountant,Auditor,Financial Analyst
+A,C,B,Tech,Conventional,41,24,I,Technology Business & Startups,Tech Consultant,Product Manager,Innovation Manager
+A,C,A,Tech,Conventional,81,49,R,IT Support & Training,Technical Trainer,System Operator,Helpdesk Technician
+C,A,B,Biological Science,Investigative,94,26,I,Clinical & Healthcare Services,Physiotherapist,Nurse,Occupational Therapist
+A,C,B,Tech,Conventional,97,70,I,IT Support & Training,Network Administrator,IT Support Specialist,System Operator
+B,B,C,Mathematics,Investigative,96,32,I,Software & Systems,Software Developer,Database Administrator,AI/ML Engineer
+B,A,B,Tech,Conventional,71,50,R,IT Support & Training,Network Administrator,Helpdesk Technician,Technical Trainer
+C,C,B,Tech,Realistic,5,6,I,Digital Media & Creative Technology,Game Developer,UI/UX Designer,Mobile App Developer
+S,S,A,Arts,Social,90,71,A,Media & Communication,Journalist,Public Relations Officer,Broadcaster
+S,S,S,Arts,Enterprising,19,57,S,Education & Social Services,Counselor,Librarian,NGO Officer
+A,C,S,Mathematics,Investigative,12,17,I,Engineering & Technical Operations,Mechanical Engineer,Industrial Engineer,Electrical Engineer
+C,C,S,Biological Science,Social,16,38,S,Environmental & Field Science,Ecologist,Marine Biologist,Wildlife Biologist
+A,C,S,Mathematics,Realistic,6,7,R,Engineering & Technical Operations,Electrical Engineer,Civil Engineer,Industrial Engineer
+B,A,B,Mathematics,Investigative,19,20,I,Engineering & Technical Operations,Electrical Engineer,Mechanical Engineer,Industrial Engineer
+A,B,B,Mathematics,Conventional,47,87,R,Data Management & Cyber Security,Data Analyst,Cybersecurity Specialist,Network Security Engineer
+B,B,B,Arts,Social,61,20,S,Creative & Performing Arts,Graphic Designer,Musician,Actor
+A,C,C,Mathematics,Realistic,85,87,R,Software & Systems,AI/ML Engineer,Web Developer,Systems Analyst
+C,B,B,Tech,Realistic,10,11,I,Digital Media & Creative Technology,Multimedia Artist,UI/UX Designer,Game Developer
+C,A,S,Mathematics,Conventional,97,15,I,Software & Systems,Software Developer,Database Administrator,Systems Analyst
+S,S,C,Commerce,Enterprising,29,12,S,Marketing & Sales,Market Research Analyst,Digital Marketer,Brand Manager
+S,B,A,Commerce,Conventional,75,6,S,Accounting & Finance,Auditor,Financial Analyst,Tax Consultant
+A,A,B,Mathematics,Investigative,93,98,I,Software & Systems,Systems Analyst,AI/ML Engineer,Web Developer
+A,A,S,Tech,Realistic,3,96,R,Digital Media & Creative Technology,AR/VR Developer,Mobile App Developer,Multimedia Artist
+A,C,S,Biological Science,Social,7,58,S,Environmental & Field Science,Wildlife Biologist,Conservation Officer,Environmental Scientist
+C,B,C,Biological Science,Social,69,6,S,Biomedical & Laboratory Research,Geneticist,Pharmacologist,Microbiologist
+C,C,A,Tech,Conventional,34,68,R,Digital Media & Creative Technology,AR/VR Developer,Game Developer,Multimedia Artist
+B,C,B,Mathematics,Realistic,22,33,I,Engineering & Technical Operations,Electrical Engineer,Civil Engineer,Robotics Engineer
+C,A,S,Biological Science,Investigative,19,21,I,Environmental & Field Science,Wildlife Biologist,Ecologist,Conservation Officer
+C,C,B,Mathematics,Realistic,12,72,I,Engineering & Technical Operations,Civil Engineer,Industrial Engineer,Robotics Engineer
+B,C,C,Biological Science,Investigative,91,49,I,Clinical & Healthcare Services,Occupational Therapist,Physiotherapist,Clinical Psychologist
+C,B,S,Mathematics,Investigative,63,77,I,Data Management & Cyber Security,Database Architect,Network Security Engineer,BI Analyst
+A,B,A,Mathematics,Realistic,7,50,R,Engineering & Technical Operations,Mechanical Engineer,Robotics Engineer,Industrial Engineer
+C,A,A,Tech,Realistic,94,21,I,IT Support & Training,Technical Trainer,Network Administrator,IT Support Specialist
+A,C,A,Mathematics,Conventional,8,64,I,Engineering & Technical Operations,Mechanical Engineer,Industrial Engineer,Civil Engineer
+S,S,A,Arts,Artistic,54,56,S,Creative & Performing Arts,Animator,Fashion Designer,Graphic Designer
+A,B,B,Tech,Conventional,21,3,I,Digital Media & Creative Technology,UI/UX Designer,AR/VR Developer,Game Developer
+A,B,B,Mathematics,Realistic,91,59,R,Software & Systems,Database Administrator,Web Developer,Systems Analyst
+A,A,C,Mathematics,Realistic,25,15,R,Engineering & Technical Operations,Industrial Engineer,Civil Engineer,Mechanical Engineer
+A,A,S,Biological Science,Investigative,85,95,I,Clinical & Healthcare Services,Physiotherapist,Physician,Occupational Therapist
+A,B,B,Biological Science,Investigative,34,7,I,Environmental & Field Science,Wildlife Biologist,Marine Biologist,Conservation Officer
+S,B,B,Commerce,Social,2,90,S,Marketing & Sales,Brand Manager,Digital Marketer,Market Research Analyst
+A,B,B,Mathematics,Realistic,0,69,I,Engineering & Technical Operations,Civil Engineer,Industrial Engineer,Electrical Engineer
+C,B,A,Commerce,Conventional,33,34,S,Marketing & Sales,Marketing Executive,Market Research Analyst,Digital Marketer
+C,C,A,Biological Science,Investigative,28,72,S,Environmental & Field Science,Conservation Officer,Ecologist,Wildlife Biologist
+C,S,B,Arts,Artistic,52,18,S,Creative & Performing Arts,Fashion Designer,Animator,Graphic Designer
+C,C,B,Mathematics,Conventional,20,75,I,Engineering & Technical Operations,Industrial Engineer,Civil Engineer,Electrical Engineer
+S,S,S,Commerce,Social,39,49,S,Marketing & Sales,Brand Manager,Digital Marketer,Market Research Analyst
+B,B,B,Biological Science,Investigative,99,2,I,Clinical & Healthcare Services,Physiotherapist,Nurse,Occupational Therapist
+C,A,A,Biological Science,Investigative,49,26,I,Biomedical & Laboratory Research,Pharmacologist,Microbiologist,Immunologist
+C,C,C,Arts,Artistic,71,10,S,Media & Communication,Content Writer,Public Relations Officer,Social Media Manager
+C,C,A,Biological Science,Social,25,67,I,Environmental & Field Science,Conservation Officer,Environmental Scientist,Wildlife Biologist
+A,B,B,Tech,Realistic,89,55,R,IT Support & Training,System Operator,IT Support Specialist,Network Administrator
+B,C,C,Mathematics,Realistic,86,89,I,Software & Systems,Systems Analyst,Database Administrator,Software Developer
+S,S,S,Commerce,Social,39,52,S,Marketing & Sales,Marketing Executive,Market Research Analyst,Digital Marketer
+S,B,A,Commerce,Conventional,63,99,E,Business Management & Strategy,Operations Manager,Entrepreneur,Project Manager
+B,A,B,Tech,Conventional,92,25,R,IT Support & Training,Helpdesk Technician,Network Administrator,Technical Trainer
+A,C,C,Biological Science,Investigative,49,4,S,Biomedical & Laboratory Research,Pharmacologist,Microbiologist,Immunologist
+A,C,C,Mathematics,Investigative,61,8,R,Data Management & Cyber Security,BI Analyst,Cybersecurity Specialist,Network Security Engineer
+C,C,S,Biological Science,Social,23,7,I,Environmental & Field Science,Ecologist,Conservation Officer,Wildlife Biologist
+A,B,A,Tech,Realistic,96,35,I,IT Support & Training,Helpdesk Technician,IT Support Specialist,System Operator
+C,B,C,Commerce,Social,81,63,S,Accounting & Finance,Auditor,Financial Analyst,Accountant
+S,B,A,Commerce,Conventional,48,48,S,Business Management & Strategy,HR Manager,Entrepreneur,Operations Manager
+A,A,S,Mathematics,Conventional,34,6,R,Engineering & Technical Operations,Robotics Engineer,Electrical Engineer,Mechanical Engineer
+S,C,A,Arts,Artistic,25,80,S,Education & Social Services,Teacher,Social Worker,Librarian
+A,A,B,Mathematics,Conventional,100,73,I,Software & Systems,Systems Analyst,Software Developer,AI/ML Engineer
+C,B,S,Tech,Investigative,94,71,R,IT Support & Training,IT Support Specialist,Technical Trainer,System Operator
+C,B,A,Arts,Social,66,31,A,Creative & Performing Arts,Actor,Graphic Designer,Animator
+A,B,B,Mathematics,Conventional,64,57,I,Data Management & Cyber Security,Cybersecurity Specialist,BI Analyst,Data Analyst
+B,C,B,Arts,Social,1,5,S,Education & Social Services,NGO Officer,Social Worker,Librarian
+B,B,A,Arts,Social,18,3,S,Education & Social Services,Librarian,Counselor,NGO Officer
+A,A,B,Mathematics,Conventional,98,84,R,Software & Systems,Systems Analyst,Software Developer,AI/ML Engineer
+C,C,S,Commerce,Conventional,82,47,S,Accounting & Finance,Auditor,Investment Banker,Tax Consultant
+A,C,B,Biological Science,Investigative,73,35,I,Clinical & Healthcare Services,Physiotherapist,Occupational Therapist,Physician
+S,C,B,Commerce,Conventional,66,68,S,Business Management & Strategy,Project Manager,Business Manager,Entrepreneur
+S,C,C,Arts,Artistic,74,60,A,Media & Communication,Broadcaster,Content Writer,Social Media Manager
+A,B,A,Biological Science,Investigative,78,52,S,Clinical & Healthcare Services,Occupational Therapist,Clinical Psychologist,Nurse
+B,B,A,Biological Science,Investigative,16,38,I,Environmental & Field Science,Conservation Officer,Marine Biologist,Environmental Scientist
+A,C,S,Mathematics,Realistic,51,52,R,Data Management & Cyber Security,Network Security Engineer,Data Analyst,Database Architect
+B,S,S,Commerce,Enterprising,12,20,E,Marketing & Sales,Digital Marketer,Brand Manager,Market Research Analyst
+S,B,S,Commerce,Enterprising,43,47,S,Business Management & Strategy,Business Manager,Entrepreneur,Project Manager
+C,A,S,Tech,Realistic,62,71,R,Technology Business & Startups,Product Manager,Business Analyst (Tech),Tech Consultant
+C,S,B,Commerce,Enterprising,27,73,S,Marketing & Sales,Marketing Executive,Brand Manager,Market Research Analyst
+C,B,C,Mathematics,Realistic,98,47,I,Software & Systems,Software Developer,Database Administrator,Web Developer
+S,S,S,Arts,Enterprising,66,71,A,Creative & Performing Arts,Graphic Designer,Actor,Fashion Designer
+B,C,C,Mathematics,Conventional,94,53,R,Software & Systems,Software Developer,AI/ML Engineer,Systems Analyst
+C,S,C,Arts,Artistic,2,61,S,Education & Social Services,Teacher,Social Worker,Librarian
+A,A,S,Mathematics,Conventional,1,79,I,Engineering & Technical Operations,Robotics Engineer,Civil Engineer,Mechanical Engineer
+A,A,B,Biological Science,Investigative,93,43,I,Clinical & Healthcare Services,Clinical Psychologist,Physiotherapist,Occupational Therapist
+B,A,B,Mathematics,Investigative,28,28,I,Engineering & Technical Operations,Electrical Engineer,Industrial Engineer,Civil Engineer
+C,S,A,Commerce,Conventional,9,97,E,Marketing & Sales,Marketing Executive,Brand Manager,Digital Marketer
+B,B,S,Arts,Enterprising,38,64,S,Education & Social Services,Social Worker,NGO Officer,Counselor
+S,C,A,Commerce,Enterprising,29,22,S,Marketing & Sales,Sales Manager,Brand Manager,Market Research Analyst
+C,B,A,Commerce,Enterprising,89,83,S,Accounting & Finance,Financial Analyst,Investment Banker,Accountant
+A,C,S,Mathematics,Realistic,27,8,R,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Industrial Engineer
+S,S,B,Commerce,Social,27,85,S,Marketing & Sales,Sales Manager,Marketing Executive,Market Research Analyst
+B,C,S,Arts,Enterprising,47,83,S,Creative & Performing Arts,Fashion Designer,Graphic Designer,Musician
+C,C,B,Arts,Social,69,81,A,Creative & Performing Arts,Actor,Fashion Designer,Animator
+B,C,A,Arts,Artistic,87,58,A,Media & Communication,Social Media Manager,Journalist,Content Writer
+A,A,C,Tech,Conventional,21,21,R,Digital Media & Creative Technology,AR/VR Developer,Mobile App Developer,Multimedia Artist
+C,A,S,Biological Science,Social,85,17,S,Clinical & Healthcare Services,Clinical Psychologist,Physiotherapist,Nurse
+A,A,S,Biological Science,Social,62,87,I,Biomedical & Laboratory Research,Geneticist,Microbiologist,Pharmacologist
+B,B,B,Biological Science,Social,6,93,S,Environmental & Field Science,Conservation Officer,Wildlife Biologist,Marine Biologist
+A,B,S,Biological Science,Social,8,71,I,Environmental & Field Science,Marine Biologist,Environmental Scientist,Wildlife Biologist
+C,B,B,Tech,Conventional,76,36,R,IT Support & Training,Network Administrator,IT Support Specialist,System Operator
+B,B,S,Biological Science,Social,18,8,I,Environmental & Field Science,Ecologist,Conservation Officer,Wildlife Biologist
+A,A,C,Mathematics,Investigative,35,92,I,Engineering & Technical Operations,Mechanical Engineer,Industrial Engineer,Robotics Engineer
+C,B,C,Arts,Artistic,28,11,S,Education & Social Services,NGO Officer,Social Worker,Teacher
+C,C,B,Mathematics,Conventional,29,38,R,Engineering & Technical Operations,Mechanical Engineer,Civil Engineer,Industrial Engineer
+C,B,A,Mathematics,Investigative,14,67,R,Engineering & Technical Operations,Electrical Engineer,Industrial Engineer,Mechanical Engineer
+B,B,A,Arts,Social,63,44,S,Creative & Performing Arts,Fashion Designer,Graphic Designer,Musician
+C,B,S,Tech,Realistic,43,23,R,Technology Business & Startups,Innovation Manager,Business Analyst (Tech),Product Manager
+B,C,A,Mathematics,Conventional,2,15,I,Engineering & Technical Operations,Civil Engineer,Industrial Engineer,Robotics Engineer
+S,S,A,Arts,Social,39,19,A,Education & Social Services,NGO Officer,Social Worker,Teacher
+A,A,C,Mathematics,Realistic,64,24,R,Data Management & Cyber Security,Database Architect,Network Security Engineer,Data Analyst
+C,B,B,Biological Science,Investigative,48,17,I,Biomedical & Laboratory Research,Microbiologist,Biomedical Scientist,Geneticist
+A,B,S,Biological Science,Investigative,98,65,I,Clinical & Healthcare Services,Nurse,Physiotherapist,Physician
+S,C,C,Commerce,Social,83,48,S,Accounting & Finance,Investment Banker,Auditor,Tax Consultant
+A,A,C,Mathematics,Investigative,31,94,I,Engineering & Technical Operations,Mechanical Engineer,Industrial Engineer,Robotics Engineer
+A,C,S,Tech,Realistic,13,76,R,Digital Media & Creative Technology,Game Developer,AR/VR Developer,Mobile App Developer
+S,C,A,Arts,Enterprising,83,29,S,Media & Communication,Content Writer,Broadcaster,Public Relations Officer
+A,A,S,Biological Science,Investigative,68,97,I,Biomedical & Laboratory Research,Microbiologist,Biomedical Scientist,Immunologist
+C,A,A,Biological Science,Investigative,11,4,I,Environmental & Field Science,Marine Biologist,Conservation Officer,Wildlife Biologist
+S,C,B,Commerce,Conventional,56,36,S,Business Management & Strategy,Entrepreneur,Operations Manager,Project Manager
+A,B,S,Mathematics,Investigative,78,69,I,Software & Systems,Software Developer,Systems Analyst,Database Administrator
+B,B,S,Biological Science,Investigative,36,41,S,Environmental & Field Science,Conservation Officer,Environmental Scientist,Wildlife Biologist
+A,A,S,Biological Science,Investigative,55,38,S,Biomedical & Laboratory Research,Biomedical Scientist,Immunologist,Microbiologist
+B,C,C,Arts,Social,45,29,S,Creative & Performing Arts,Graphic Designer,Animator,Fashion Designer
+B,C,A,Tech,Conventional,37,62,I,Digital Media & Creative Technology,Mobile App Developer,UI/UX Designer,Game Developer
+A,B,A,Mathematics,Realistic,41,52,I,Data Management & Cyber Security,Network Security Engineer,Database Architect,Data Analyst
+B,A,A,Biological Science,Social,98,43,I,Clinical & Healthcare Services,Clinical Psychologist,Physiotherapist,Occupational Therapist
+S,S,C,Arts,Artistic,40,10,S,Creative & Performing Arts,Fashion Designer,Graphic Designer,Actor
+C,B,B,Mathematics,Conventional,66,74,R,Data Management & Cyber Security,Network Security Engineer,Database Architect,Data Analyst
+B,C,B,Mathematics,Investigative,48,43,R,Data Management & Cyber Security,BI Analyst,Data Analyst,Network Security Engineer
+A,B,A,Tech,Investigative,72,97,R,IT Support & Training,Network Administrator,IT Support Specialist,System Operator
+C,C,A,Biological Science,Investigative,48,66,S,Biomedical & Laboratory Research,Biomedical Scientist,Geneticist,Immunologist
+C,S,B,Commerce,Conventional,59,51,S,Business Management & Strategy,Entrepreneur,Project Manager,Business Manager
+A,A,S,Biological Science,Investigative,30,96,I,Environmental & Field Science,Ecologist,Environmental Scientist,Wildlife Biologist
+A,A,B,Tech,Conventional,71,5,I,IT Support & Training,IT Support Specialist,System Operator,Helpdesk Technician
+A,A,S,Mathematics,Conventional,27,16,R,Engineering & Technical Operations,Mechanical Engineer,Robotics Engineer,Civil Engineer
+S,S,B,Arts,Enterprising,77,23,S,Media & Communication,Broadcaster,Public Relations Officer,Content Writer
+B,A,B,Tech,Investigative,4,93,R,Digital Media & Creative Technology,AR/VR Developer,Game Developer,UI/UX Designer
+B,B,C,Mathematics,Investigative,26,86,R,Engineering & Technical Operations,Electrical Engineer,Mechanical Engineer,Industrial Engineer
+C,A,B,Tech,Conventional,73,73,R,IT Support & Training,System Operator,IT Support Specialist,Technical Trainer
+S,B,C,Commerce,Social,22,13,E,Marketing & Sales,Sales Manager,Marketing Executive,Digital Marketer
+C,A,C,Mathematics,Realistic,56,48,I,Data Management & Cyber Security,Network Security Engineer,Cybersecurity Specialist,BI Analyst
+A,A,S,Tech,Realistic,68,60,R,Technology Business & Startups,Tech Consultant,Innovation Manager,Startup Founder
+B,C,B,Commerce,Social,28,75,S,Marketing & Sales,Marketing Executive,Digital Marketer,Brand Manager
+B,B,B,Biological Science,Investigative,3,74,I,Environmental & Field Science,Environmental Scientist,Conservation Officer,Marine Biologist
+B,C,S,Mathematics,Conventional,88,44,I,Software & Systems,Software Developer,Database Administrator,AI/ML Engineer
+B,C,C,Biological Science,Investigative,93,34,S,Clinical & Healthcare Services,Physician,Nurse,Clinical Psychologist
+B,S,C,Commerce,Enterprising,70,50,E,Accounting & Finance,Investment Banker,Financial Analyst,Tax Consultant
+B,B,A,Tech,Realistic,63,70,R,Technology Business & Startups,Product Manager,Tech Consultant,Startup Founder
+S,C,A,Commerce,Social,67,92,S,Business Management & Strategy,Project Manager,HR Manager,Operations Manager
+B,A,S,Mathematics,Conventional,49,16,I,Data Management & Cyber Security,BI Analyst,Database Architect,Cybersecurity Specialist
+S,S,C,Commerce,Conventional,83,37,S,Accounting & Finance,Accountant,Tax Consultant,Investment Banker
+B,S,S,Arts,Artistic,66,41,A,Creative & Performing Arts,Graphic Designer,Musician,Actor
+B,A,A,Mathematics,Conventional,68,15,I,Data Management & Cyber Security,Cybersecurity Specialist,BI Analyst,Data Analyst
+C,C,S,Tech,Realistic,52,79,R,Technology Business & Startups,Innovation Manager,Business Analyst (Tech),Tech Consultant
+B,B,B,Tech,Conventional,62,16,I,Technology Business & Startups,Startup Founder,Product Manager,Business Analyst (Tech)
+B,A,C,Biological Science,Social,15,19,I,Environmental & Field Science,Ecologist,Marine Biologist,Wildlife Biologist
+C,C,S,Arts,Enterprising,13,76,S,Education & Social Services,Social Worker,Librarian,Teacher
+C,B,C,Arts,Enterprising,55,8,S,Creative & Performing Arts,Musician,Fashion Designer,Actor
+B,C,A,Mathematics,Realistic,8,16,R,Engineering & Technical Operations,Mechanical Engineer,Industrial Engineer,Electrical Engineer
+B,S,B,Arts,Social,26,29,S,Education & Social Services,Counselor,Librarian,NGO Officer
+A,C,B,Mathematics,Investigative,85,67,I,Software & Systems,Web Developer,Software Developer,Database Administrator
+A,C,A,Mathematics,Investigative,3,22,I,Engineering & Technical Operations,Civil Engineer,Electrical Engineer,Industrial Engineer
+B,B,A,Arts,Artistic,2,63,A,Education & Social Services,Social Worker,Librarian,NGO Officer
+A,C,B,Tech,Conventional,44,72,R,Technology Business & Startups,Product Manager,Tech Consultant,Innovation Manager
+B,B,A,Mathematics,Investigative,67,2,R,Data Management & Cyber Security,Database Architect,Network Security Engineer,Cybersecurity Specialist
+B,C,B,Tech,Conventional,45,54,R,Technology Business & Startups,Innovation Manager,Product Manager,Startup Founder
+A,C,S,Tech,Investigative,40,54,R,Technology Business & Startups,Startup Founder,Product Manager,Innovation Manager
+B,B,S,Tech,Realistic,73,32,R,IT Support & Training,Technical Trainer,Helpdesk Technician,IT Support Specialist
+S,B,B,Arts,Artistic,81,61,S,Media & Communication,Journalist,Content Writer,Social Media Manager
+S,C,C,Arts,Social,46,37,A,Creative & Performing Arts,Actor,Graphic Designer,Musician
+B,B,A,Tech,Realistic,14,81,I,Digital Media & Creative Technology,UI/UX Designer,AR/VR Developer,Multimedia Artist
+B,C,S,Commerce,Conventional,90,83,E,Accounting & Finance,Investment Banker,Accountant,Tax Consultant
+B,B,A,Arts,Enterprising,61,15,A,Creative & Performing Arts,Graphic Designer,Fashion Designer,Actor
+C,C,S,Biological Science,Social,76,92,S,Clinical & Healthcare Services,Physician,Physiotherapist,Nurse
+B,S,A,Arts,Social,88,60,S,Media & Communication,Journalist,Social Media Manager,Content Writer
+S,C,C,Arts,Enterprising,79,23,A,Media & Communication,Broadcaster,Journalist,Social Media Manager
+C,C,S,Mathematics,Conventional,94,8,R,Software & Systems,Systems Analyst,Database Administrator,Software Developer
+C,C,B,Biological Science,Investigative,79,36,S,Clinical & Healthcare Services,Physician,Occupational Therapist,Nurse
+B,C,A,Commerce,Enterprising,35,32,S,Marketing & Sales,Marketing Executive,Sales Manager,Digital Marketer
+C,C,C,Commerce,Conventional,8,81,S,Marketing & Sales,Market Research Analyst,Sales Manager,Digital Marketer
+B,B,S,Commerce,Conventional,9,63,S,Marketing & Sales,Digital Marketer,Market Research Analyst,Brand Manager
+C,B,A,Tech,Conventional,27,61,I,Digital Media & Creative Technology,Game Developer,UI/UX Designer,Multimedia Artist
+B,C,S,Tech,Conventional,74,3,I,IT Support & Training,Technical Trainer,IT Support Specialist,Network Administrator
+A,C,S,Mathematics,Conventional,63,28,I,Data Management & Cyber Security,Database Architect,Network Security Engineer,Cybersecurity Specialist
+C,S,S,Commerce,Conventional,2,52,E,Marketing & Sales,Marketing Executive,Sales Manager,Brand Manager
+S,B,S,Arts,Enterprising,93,57,A,Media & Communication,Content Writer,Social Media Manager,Broadcaster
+C,A,A,Biological Science,Social,49,43,S,Biomedical & Laboratory Research,Microbiologist,Immunologist,Biomedical Scientist
+C,A,S,Tech,Realistic,33,88,I,Digital Media & Creative Technology,AR/VR Developer,Mobile App Developer,Game Developer
+C,B,C,Biological Science,Investigative,62,55,I,Biomedical & Laboratory Research,Pharmacologist,Geneticist,Biomedical Scientist
+B,B,B,Biological Science,Social,14,21,I,Environmental & Field Science,Environmental Scientist,Conservation Officer,Ecologist
+S,B,C,Commerce,Enterprising,5,1,E,Marketing & Sales,Sales Manager,Brand Manager,Digital Marketer
+C,C,S,Commerce,Social,9,59,S,Marketing & Sales,Digital Marketer,Brand Manager,Marketing Executive
+A,C,B,Mathematics,Realistic,70,47,R,Software & Systems,AI/ML Engineer,Systems Analyst,Software Developer
+C,C,S,Mathematics,Conventional,79,27,R,Software & Systems,Web Developer,Database Administrator,Systems Analyst
+B,B,A,Commerce,Social,90,38,S,Accounting & Finance,Accountant,Tax Consultant,Financial Analyst
+B,S,B,Arts,Artistic,75,91,A,Media & Communication,Public Relations Officer,Social Media Manager,Journalist
+S,C,A,Arts,Enterprising,56,45,S,Creative & Performing Arts,Graphic Designer,Fashion Designer,Actor
+A,B,C,Biological Science,Social,7,53,I,Environmental & Field Science,Environmental Scientist,Marine Biologist,Ecologist
+C,C,B,Mathematics,Investigative,93,16,I,Software & Systems,Software Developer,AI/ML Engineer,Systems Analyst
+C,C,C,Arts,Enterprising,38,37,S,Education & Social Services,Librarian,Counselor,NGO Officer
+B,B,S,Arts,Social,35,57,A,Education & Social Services,Social Worker,Librarian,Teacher
+A,A,A,Tech,Conventional,2,60,I,Digital Media & Creative Technology,UI/UX Designer,Multimedia Artist,Mobile App Developer
+B,B,A,Arts,Artistic,4,26,A,Education & Social Services,Counselor,Teacher,Librarian
+C,B,C,Mathematics,Conventional,23,72,I,Engineering & Technical Operations,Industrial Engineer,Electrical Engineer,Robotics Engineer
+A,C,C,Tech,Conventional,40,72,R,Technology Business & Startups,Startup Founder,Tech Consultant,Business Analyst (Tech)
+B,A,S,Biological Science,Social,43,20,S,Biomedical & Laboratory Research,Pharmacologist,Microbiologist,Immunologist
+C,C,C,Biological Science,Social,20,3,I,Environmental & Field Science,Marine Biologist,Conservation Officer,Wildlife Biologist
+B,C,B,Tech,Realistic,4,98,R,Digital Media & Creative Technology,Game Developer,UI/UX Designer,Mobile App Developer
+B,B,S,Tech,Investigative,40,29,I,Technology Business & Startups,Business Analyst (Tech),Innovation Manager,Product Manager
+A,C,S,Biological Science,Social,61,10,I,Biomedical & Laboratory Research,Microbiologist,Biomedical Scientist,Immunologist
+S,C,C,Arts,Enterprising,37,0,A,Education & Social Services,Counselor,NGO Officer,Librarian
+C,C,S,Commerce,Social,40,31,E,Business Management & Strategy,Business Manager,Project Manager,HR Manager
+A,A,S,Mathematics,Conventional,52,99,R,Data Management & Cyber Security,Data Analyst,BI Analyst,Database Architect
+C,C,S,Arts,Enterprising,87,8,A,Media & Communication,Public Relations Officer,Broadcaster,Content Writer
+B,B,B,Tech,Realistic,74,43,I,IT Support & Training,Helpdesk Technician,System Operator,Technical Trainer
+C,C,A,Arts,Artistic,50,67,S,Creative & Performing Arts,Fashion Designer,Actor,Graphic Designer
+S,B,C,Arts,Social,60,37,S,Creative & Performing Arts,Musician,Animator,Graphic Designer
+C,C,S,Biological Science,Investigative,31,95,S,Environmental & Field Science,Conservation Officer,Wildlife Biologist,Marine Biologist
+B,S,B,Arts,Enterprising,50,42,S,Creative & Performing Arts,Animator,Graphic Designer,Actor
+B,S,B,Commerce,Enterprising,49,31,S,Business Management & Strategy,HR Manager,Project Manager,Entrepreneur
+S,B,C,Arts,Enterprising,70,81,A,Media & Communication,Broadcaster,Social Media Manager,Journalist
+A,A,C,Biological Science,Social,83,27,I,Clinical & Healthcare Services,Occupational Therapist,Clinical Psychologist,Physiotherapist
+C,A,A,Biological Science,Investigative,2,72,S,Environmental & Field Science,Environmental Scientist,Marine Biologist,Conservation Officer
+A,C,C,Biological Science,Social,47,84,S,Biomedical & Laboratory Research,Pharmacologist,Microbiologist,Immunologist
+C,S,A,Commerce,Social,86,60,E,Accounting & Finance,Auditor,Financial Analyst,Tax Consultant
+B,C,S,Tech,Realistic,36,32,R,Digital Media & Creative Technology,Game Developer,AR/VR Developer,Mobile App Developer

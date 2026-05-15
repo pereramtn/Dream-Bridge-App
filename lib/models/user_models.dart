@@ -1,4 +1,4 @@
-class UserModel {
+class StudentModel {
   final String uid;
   final String name;
   final int age;
@@ -6,7 +6,7 @@ class UserModel {
   final int stream;
   final bool profileCompleted;
 
-  UserModel({
+  StudentModel({
     required this.uid,
     required this.name,
     required this.age,
@@ -15,8 +15,8 @@ class UserModel {
     required this.profileCompleted,
   });
 
-  factory UserModel.fromFirestore(String uid, Map<String, dynamic> data) {
-    return UserModel(
+  factory StudentModel.fromFirestore(String uid, Map<String, dynamic> data) {
+    return StudentModel(
       uid: uid,
       name: data['name'] ?? '',
       age: data['age'] ?? 0,

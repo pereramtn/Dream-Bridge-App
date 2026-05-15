@@ -1,7 +1,7 @@
 import 'package:dream_bridge_app/Pages/career_roadmap_details.dart';
 import 'package:dream_bridge_app/Pages/create_account_page.dart';
 import 'package:dream_bridge_app/Pages/discover_path_details.dart';
-import 'package:dream_bridge_app/Pages/dream_bot_details.dart';
+import 'package:dream_bridge_app/Pages/dream_bot.dart';
 import 'package:dream_bridge_app/Pages/learn_more_page.dart';
 import 'package:dream_bridge_app/Pages/quizes_details.dart';
 import 'package:dream_bridge_app/Pages/signin_page.dart';
@@ -23,8 +23,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: 
-      Container(
+      body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topRight,
@@ -232,7 +231,7 @@ class HomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const DreamBotDetails(),
+                            builder: (context) => DreamBotPage(),
                           ),
                         );
                       },

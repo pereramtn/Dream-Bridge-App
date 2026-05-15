@@ -46,12 +46,12 @@ class _UserDataScreenState extends State<SigninPage> {
       final uid = userCredential.user!.uid;
 
       final doc = await FirebaseFirestore.instance
-          .collection('users') // same collection for profile & assessment
+          .collection('Students') // same collection for profile & assessment
           .doc(uid)
           .get();
 
       if (doc.exists) {
-        final userModel = UserModel.fromFirestore(uid, doc.data()!);
+        final userModel = StudentModel.fromFirestore(uid, doc.data()!);
         Provider.of<UserProvider>(context, listen: false).setUser(userModel);
 
         Navigator.pushReplacement(
@@ -66,7 +66,7 @@ class _UserDataScreenState extends State<SigninPage> {
         // If no profile document exists yet
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => const ProfileCompletionPage()),
+          MaterialPageRoute(builder: (_) => const MainScreen()),
         );
       }
     } catch (e) {

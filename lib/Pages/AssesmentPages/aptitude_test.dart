@@ -1,8 +1,23 @@
 import 'package:dream_bridge_app/Pages/AssesmentPages/aptitude_test_result.dart';
 import 'package:dream_bridge_app/constants/colors.dart';
-import 'package:dream_bridge_app/models/question.dart';
 import 'package:dream_bridge_app/wigets/custom_appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+// Question model
+class Question {
+  final String question;
+  final List<String> options;
+  final int correctIndex;
+  final String category;
+
+  Question({
+    required this.question,
+    required this.options,
+    required this.correctIndex,
+    required this.category,
+  });
+}
 
 class AptitudeTestPage extends StatefulWidget {
   final String userId;
@@ -20,66 +35,68 @@ class AptitudeTestPage extends StatefulWidget {
 
 class _AptitudeTestPageState extends State<AptitudeTestPage> {
   int currentIndex = 0;
-  List<int?> selectedAnswers = [];
+  late List<int?> selectedAnswers;
+
+  // Sample questions for the aptitude test
 
   final List<Question> questions = [
     Question(
-      question: 'What is the next number? 3, 6, 12, 24, ?',
-      options: ['36', '42', '48', '30'],
-      correctIndex: 2,
+      question: 'Find the next number: 2, 4, 8, 16, ?',
+      options: ['20', '32', '24', '30'],
+      correctIndex: 1,
       category: 'Logical',
     ),
     Question(
-      question: 'Find the odd one out',
-      options: ['Apple', 'Banana', 'Carrot', 'Mango'],
-      correctIndex: 2,
+      question: 'Which one is odd out?',
+      options: ['Dog', 'Cat', 'Bird', 'Car'],
+      correctIndex: 3,
       category: 'Logical',
     ),
     Question(
-      question: 'What is 25% of 200?',
-      options: ['25', '40', '50', '60'],
+      question: 'What is 15% of 200?',
+      options: ['20', '25', '30', '35'],
       correctIndex: 2,
       category: 'Numerical',
     ),
     Question(
-      question: 'If 3 pens cost Rs.90, what is the cost of 5 pens?',
-      options: ['120', '150', '180', '200'],
+      question: 'If 5 pens cost 150, 8 pens cost?',
+      options: ['200', '240', '250', '260'],
       correctIndex: 1,
       category: 'Numerical',
     ),
     Question(
-      question: 'Choose the synonym for "Quick"',
-      options: ['Slow', 'Fast', 'Weak', 'Late'],
+      question: 'Synonym of "Happy"?',
+      options: ['Sad', 'Joyful', 'Angry', 'Tired'],
       correctIndex: 1,
       category: 'Verbal',
     ),
     Question(
-      question: 'Choose the antonym for "Success"',
-      options: ['Growth', 'Failure', 'Profit', 'Victory'],
-      correctIndex: 1,
+      question: 'Antonym of "Strong"?',
+      options: ['Weak', 'Powerful', 'Firm', 'Tough'],
+      correctIndex: 0,
       category: 'Verbal',
     ),
     Question(
-      question: 'Which shape comes next? ⬜ 🔺 ⬜ 🔺 ?',
-      options: ['🔺', '⬜', '⚪', '🔵'],
-      correctIndex: 1,
+      question: 'Which shape comes next? ◻️ 🔺 ◻️ 🔺 ?',
+      options: ['◻️', '🔺', '⚪', '🔵'],
+      correctIndex: 0,
       category: 'Spatial',
     ),
     Question(
-      question: 'Which object is different from the others?',
+      question: 'Which object is different?',
       options: ['Circle', 'Square', 'Triangle', 'Line'],
       correctIndex: 3,
       category: 'Spatial',
     ),
     Question(
-      question: 'You receive negative feedback. What do you do?',
-      options: ['Feel angry', 'Ignore it', 'Accept and improve', 'Quit the task'],
+      question: 'You have multiple tasks, what do you do?',
+      options: ['Panic', 'Do randomly', 'Prioritize and plan', 'Ignore some'],
       correctIndex: 2,
       category: 'Situational',
     ),
     Question(
-      question: 'You have multiple deadlines. What will you do?',
-      options: ['Panic', 'Delay all tasks', 'Prioritize and plan', 'Ignore some work'],
+      question: 'Negative feedback received, you:',
+      options: ['Angry', 'Ignore', 'Accept & improve', 'Quit'],
       correctIndex: 2,
       category: 'Situational',
     ),
@@ -92,14 +109,19 @@ class _AptitudeTestPageState extends State<AptitudeTestPage> {
   }
 
   void nextQuestion() {
-    if (currentIndex < questions.length - 1) setState(() => currentIndex++);
+    if (currentIndex < questions.length - 1) {
+      setState(() => currentIndex++);
+    }
   }
 
   void previousQuestion() {
-    if (currentIndex > 0) setState(() => currentIndex--);
+    if (currentIndex > 0) {
+      setState(() => currentIndex--);
+    }
   }
 
-  // ✅ Calculate scores and navigate to Result Page
+
+// Calculate scores and save apptitude test data to Firestore
   Future<void> submitTest() async {
     Map<String, int> scores = {
       'Logical': 0,
@@ -111,28 +133,48 @@ class _AptitudeTestPageState extends State<AptitudeTestPage> {
 
     for (int i = 0; i < questions.length; i++) {
       if (selectedAnswers[i] == questions[i].correctIndex) {
-        scores[questions[i].category] = scores[questions[i].category]! + 2;
+        scores[questions[i].category] =
+            scores[questions[i].category]! + 1;
       }
     }
 
-    // Navigate to Result Page and wait for completion
-    bool? completed = await Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => AptitudeResultPage(
-          scores: scores,
-          userId: widget.userId,
-          markCompleted: widget.markCompleted,
-        ),
-      ),
-    );
+    try {
+      await FirebaseFirestore.instance
+          .collection("students")
+          .doc(widget.userId)
+          .collection("aptitudeTest")
+          .doc("aptitude_data")
+          .set({
+        "aptitude_id": "aptitude_data",
+        "user_id": widget.userId,
+        "scores": scores,
+      });
 
-    // Refresh progress only if test was marked completed
-    if (completed == true) {
       widget.markCompleted("Aptitude Test");
-      Navigator.pop(context, true); // Return to AssessmentPage and refresh
+
+      if (mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                AptitudeResultPage(scores: scores),
+          ),
+        );
+      }
+    } catch (e) {
+      print("Error saving aptitude test: $e");
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("Error saving test. Please try again."),
+          ),
+        );
+      }
     }
   }
+  
+
+  // Page UI
 
   @override
   Widget build(BuildContext context) {
@@ -154,62 +196,74 @@ class _AptitudeTestPageState extends State<AptitudeTestPage> {
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 20),
-            Card(
-              elevation: 4,
-              color: kletGray,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  children: [
-                    Text(
-                      question.question,
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
+            Expanded(
+              child: Card(
+                elevation: 4,
+                color: kletGray,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Text(
+                          question.question,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        ...List.generate(question.options.length, (index) {
+                          return RadioListTile<int>(
+                            value: index,
+                            groupValue: selectedAnswers[currentIndex],
+                            title: Text(question.options[index]),
+                            onChanged: (value) {
+                              setState(() {
+                                selectedAnswers[currentIndex] = value;
+                              });
+                            },
+                          );
+                        }),
+                      ],
                     ),
-                    const SizedBox(height: 20),
-                    ...List.generate(question.options.length, (index) {
-                      return RadioListTile<int>(
-                        value: index,
-                        groupValue: selectedAnswers[currentIndex],
-                        title: Text(question.options[index]),
-                        onChanged: (value) {
-                          setState(() {
-                            selectedAnswers[currentIndex] = value;
-                          });
-                        },
-                      );
-                    }),
-                  ],
+                  ),
                 ),
               ),
             ),
-            const Spacer(),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
-                  onPressed: currentIndex == 0 ? null : previousQuestion,
+                  onPressed:
+                      currentIndex == 0 ? null : previousQuestion,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kMainGTeal1,
-                    foregroundColor: Colors.white,
+                    foregroundColor: kMainWhite,
                   ),
                   child: const Text('Previous'),
                 ),
                 ElevatedButton(
-                  onPressed: currentIndex == questions.length - 1
-                      ? submitTest
-                      : nextQuestion,
+                  onPressed: selectedAnswers[currentIndex] == null
+                      ? null
+                      : (currentIndex == questions.length - 1
+                          ? submitTest
+                          : nextQuestion),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: kMainGTeal1,
+                    backgroundColor:
+                        selectedAnswers[currentIndex] == null
+                            ? Colors.grey
+                            : kMainGTeal1,
                     foregroundColor: Colors.white,
                   ),
                   child: Text(
-                    currentIndex == questions.length - 1 ? 'Submit' : 'Next',
+                    currentIndex == questions.length - 1
+                        ? 'Submit'
+                        : 'Next',
                   ),
                 ),
               ],

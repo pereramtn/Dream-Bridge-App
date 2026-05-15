@@ -2,7 +2,6 @@ import 'package:dream_bridge_app/wigets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dream_bridge_app/constants/colors.dart';
-import 'package:dream_bridge_app/constants/responsive.dart';
 
 class AcademicInfoPage extends StatefulWidget {
   final String userId;
@@ -21,30 +20,30 @@ class AcademicInfoPage extends StatefulWidget {
 class _AcademicInfoPageState extends State<AcademicInfoPage> {
   final _formKey = GlobalKey<FormState>();
 
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  bool isSaving = false;
+
+  // O/L Subjects
   final Map<String, String> olSubjects = {
     "Mathematics": "",
     "Science": "",
     "English": "",
-    "Sinhala/Tamil": "",
-    "History": "",
   };
 
   final List<String> grades = ["A", "B", "C", "S", "F"];
 
-  String alStream = "Not yet";
+  // A/L
+  String alStream = "";
   final Map<String, String> alSubjects = {};
+
   final List<String> alOptions = [
     "Biological Science",
     "Mathematics",
     "Commerce",
     "Arts",
     "Technology",
-    "Not yet",
   ];
-
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
-  bool isSaving = false; // ✅ Disable button while saving
 
   @override
   void initState() {
@@ -52,87 +51,106 @@ class _AcademicInfoPageState extends State<AcademicInfoPage> {
     loadAcademicData();
   }
 
+  // ================= LOAD DATA =================
   Future<void> loadAcademicData() async {
     try {
-      DocumentSnapshot snapshot =
-          await _firestore.collection("users").doc(widget.userId).get();
+      final snapshot = await _firestore
+          .collection("students")
+          .doc(widget.userId)
+          .collection("academicInfo")
+          .doc("academic_data")
+          .get();
 
       if (snapshot.exists && snapshot.data() != null) {
-        Map<String, dynamic> data = snapshot.data() as Map<String, dynamic>;
+        final academic = snapshot.data()!;
 
-        if (data.containsKey("academicInfo")) {
-          Map<String, dynamic> academic =
-              Map<String, dynamic>.from(data["academicInfo"]);
+        setState(() {
+          // Load O/L
+          if (academic.containsKey("olResults")) {
+            Map<String, dynamic> savedOl = Map<String, dynamic>.from(
+              academic["olResults"],
+            );
 
-          setState(() {
-            if (academic.containsKey("olResults")) {
-              Map<String, dynamic> savedOl =
-                  Map<String, dynamic>.from(academic["olResults"]);
-              savedOl.forEach((key, value) {
-                if (olSubjects.containsKey(key)) olSubjects[key] = value;
-              });
+            for (var subject in olSubjects.keys) {
+              if (savedOl.containsKey(subject)) {
+                olSubjects[subject] = savedOl[subject];
+              }
             }
+          }
 
-            alStream = academic["alStream"] ?? "Not yet";
+          // Load A/L Stream
+          alStream = academic["alStream"] ?? "";
 
-            if (academic.containsKey("alResults")) {
-              alSubjects.clear();
-              Map<String, dynamic> savedAl =
-                  Map<String, dynamic>.from(academic["alResults"]);
-              savedAl.forEach((key, value) {
-                alSubjects[key] = value;
-              });
-            }
-          });
-        }
+          // Load A/L subjects
+          if (academic.containsKey("alResults")) {
+            alSubjects.clear();
+            Map<String, dynamic> savedAl = Map<String, dynamic>.from(
+              academic["alResults"],
+            );
+
+            savedAl.forEach((key, value) {
+              alSubjects[key] = value;
+            });
+          }
+        });
       }
     } catch (e) {
-      print("Error loading academic data: $e");
+      debugPrint("Error loading academic data: $e");
     }
   }
 
+  // save academic info to Firestore
   Future<void> submitData() async {
-    if (isSaving) return; // Prevent multiple taps
+    if (isSaving) return;
 
     if (!_formKey.currentState!.validate()) return;
 
-    _formKey.currentState!.save();
-
-    setState(() {
-      isSaving = true; // Disable button
-    });
-
-    Map<String, dynamic> academicData = {
-      "olResults": olSubjects,
-      "alStream": alStream,
-      "alResults": alSubjects,
-    };
+    setState(() => isSaving = true);
 
     try {
-      await _firestore.collection("users").doc(widget.userId).set(
-            {"academicInfo": academicData},
-            SetOptions(merge: true),
-          );
+      Map<String, dynamic> academicData = {
+        "academic_id": "academic_data",
+        "user_id": widget.userId,
+        "olResults": olSubjects,
+        "alStream": alStream,
+        "alResults": alSubjects,
+      };
+
+      await _firestore
+          .collection("students") 
+          .doc(widget.userId)
+          .collection("academicInfo")
+          .doc("academic_data")
+          .set(academicData, SetOptions(merge: true));
 
       widget.markCompleted("Academic Info");
 
-      // Return true to refresh AssessmentPage
-      Navigator.pop(context, true);
+      if (mounted) {
+        Navigator.pop(context, true);
+      }
     } catch (e) {
-      print("Error saving academic info: $e");
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("Error saving data. Please try again."),
-        ),
-      );
+      debugPrint("Error saving academic info: $e");
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("Error saving data. Please try again."),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
     } finally {
       if (mounted) {
-        setState(() {
-          isSaving = false;
-        });
+        setState(() => isSaving = false);
       }
     }
   }
+
+
+
+  // Page UI
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -140,124 +158,112 @@ class _AcademicInfoPageState extends State<AcademicInfoPage> {
       appBar: const CustomAppbar(appbar_title: "ACADEMIC INFO"),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(kdefaultPadding),
+          padding: const EdgeInsets.all(20),
           child: Form(
             key: _formKey,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 20),
+
+                
+
+                // O/L Section
                 const Text(
                   "Ordinary Level Results (O/L)",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 10),
-                ...olSubjects.keys.map((subject) => Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8.0),
-                      child: DropdownButtonFormField<String>(
-                        value: olSubjects[subject]!.isNotEmpty
-                            ? olSubjects[subject]
-                            : null,
-                        decoration: InputDecoration(
-                          labelText: "$subject Grade",
-                          border: const OutlineInputBorder(),
-                        ),
-                        items: grades
-                            .map((grade) => DropdownMenuItem(
-                                  value: grade,
-                                  child: Text(grade),
-                                ))
-                            .toList(),
-                        validator: (value) => (value == null || value.isEmpty)
-                            ? "Please select grade for $subject"
-                            : null,
-                        onChanged: (value) {
-                          setState(() {
-                            olSubjects[subject] = value!;
-                          });
-                        },
-                        onSaved: (value) {
-                          olSubjects[subject] = value!;
-                        },
-                      ),
-                    )),
+                const SizedBox(height: 15),
 
-                const SizedBox(height: 20),
+                ...olSubjects.keys.map(
+                  (subject) => Padding(
+                    padding: const EdgeInsets.only(bottom: 15),
+                    child: DropdownButtonFormField<String>(
+                      initialValue: olSubjects[subject]!.isNotEmpty
+                          ? olSubjects[subject]
+                          : null,
+                      decoration: InputDecoration(
+                        labelText: "$subject Grade",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      items: grades
+                          .map(
+                            (grade) => DropdownMenuItem(
+                              value: grade,
+                              child: Text(grade),
+                            ),
+                          )
+                          .toList(),
+                      validator: (value) => value == null || value.isEmpty
+                          ? "Select grade for $subject"
+                          : null,
+                      onChanged: (value) {
+                        setState(() {
+                          olSubjects[subject] = value!;
+                        });
+                      },
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 25),
+
+
+
+                // A/L Section
                 const Text(
                   "Advanced Level Stream (A/L)",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 15),
+
                 DropdownButtonFormField<String>(
-                  value: alStream != "Not yet" ? alStream : null,
+                  initialValue: alStream.isNotEmpty ? alStream : null,
+                  decoration: InputDecoration(
+                    labelText: "Select Your A/L Stream",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
                   items: alOptions
-                      .map((stream) => DropdownMenuItem(
-                            value: stream,
-                            child: Text(stream),
-                          ))
+                      .map(
+                        (stream) => DropdownMenuItem(
+                          value: stream,
+                          child: Text(stream),
+                        ),
+                      )
                       .toList(),
+                  validator: (value) => value == null || value.isEmpty
+                      ? "Please select A/L stream"
+                      : null,
                   onChanged: (value) {
                     setState(() {
                       alStream = value!;
-                      if (alStream == "Not yet") alSubjects.clear();
+                      alSubjects.clear();
                     });
                   },
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return "Please select A/L stream";
-                    }
-                    return null;
-                  },
-                  decoration: const InputDecoration(
-                    labelText: "Select Your A/L Stream",
-                    border: OutlineInputBorder(),
-                  ),
                 ),
-                const SizedBox(height: 10),
 
-                if (alStream != "Not yet") ...[
-                  const Text(
-                    "Enter A/L Subject Results",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 10),
-                  for (int i = 1; i <= 3; i++)
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8.0),
-                      child: TextFormField(
-                        initialValue: alSubjects["Subject $i"],
-                        decoration: InputDecoration(
-                          labelText: "Subject $i Grade",
-                          border: const OutlineInputBorder(),
-                        ),
-                        validator: (value) {
-                          if (value == null || value.isEmpty) {
-                            return "Enter grade for subject $i";
-                          }
-                          return null;
-                        },
-                        onSaved: (value) {
-                          if (value != null) alSubjects["Subject $i"] = value;
-                        },
-                      ),
-                    ),
-                ],
+                const SizedBox(height: 35),
 
-                const SizedBox(height: 20),
+
+
+                // Submit Button
                 SizedBox(
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
                     onPressed: isSaving ? null : submitData,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          isSaving ? Colors.grey : kMainGTeal1,
+                      backgroundColor: isSaving ? Colors.grey : kMainTeal2,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
                     ),
                     child: Text(
                       isSaving ? "Saving..." : "Submit Academic Info",
-                      style: const TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18, color: Colors.white),
                     ),
                   ),
                 ),

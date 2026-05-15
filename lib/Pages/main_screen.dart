@@ -1,9 +1,10 @@
 import 'package:dream_bridge_app/Pages/Dashboard_page.dart';
 import 'package:dream_bridge_app/Pages/Profile_page.dart';
 import 'package:dream_bridge_app/Pages/AssesmentPages/assesment_page.dart';
+import 'package:dream_bridge_app/Pages/career_results.dart';
 import 'package:dream_bridge_app/Pages/explore_page.dart';
-import 'package:dream_bridge_app/Pages/progress_page.dart';
 import 'package:dream_bridge_app/constants/colors.dart';
+import 'package:dream_bridge_app/services/api_service.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -16,12 +17,14 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   //current page index
   int _currentPageIndex = 0;
+  
+  Future<CareerRecommendation>? get futureCareer => null;
   @override
   Widget build(BuildContext context) {
     //screens list
     final List<Widget> pages = [
       DashboardPage(),
-      ProgressPage(),
+      CareerResult(),
       ExplorePage(),
       AssessmentPage(),
       ProfilePage(),
@@ -57,7 +60,7 @@ class _MainScreenState extends State<MainScreen> {
               icon: Icon(Icons.dashboard),
               label: "Dashboard",
             ),
-            BottomNavigationBarItem(icon: Icon(Icons.trending_up), label: "Progress"),
+            BottomNavigationBarItem(icon: Icon(Icons.school), label: "Career"),
             BottomNavigationBarItem(
               icon: Container(
                 padding: const EdgeInsets.all(5),

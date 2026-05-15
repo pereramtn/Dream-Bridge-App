@@ -16,10 +16,10 @@ class Smallcontainer extends StatelessWidget {
           color: kMainTeal2,
           boxShadow: const [
             BoxShadow(
-              color: Colors.black26, 
-              blurRadius: 10, 
-              spreadRadius: 3, 
-              offset: Offset(0, 4), 
+              color: Colors.black26,
+              blurRadius: 10,
+              spreadRadius: 3,
+              offset: Offset(0, 4),
             ),
           ],
         ),

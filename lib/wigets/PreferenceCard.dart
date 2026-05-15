@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class PreferenceCard extends StatelessWidget {
@@ -31,7 +30,10 @@ class PreferenceCard extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
-                  color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             const SizedBox(height: 10),
             DropdownButton<String>(
@@ -41,10 +43,7 @@ class PreferenceCard extends StatelessWidget {
               underline: Container(),
               style: const TextStyle(color: Colors.white),
               items: options
-                  .map((s) => DropdownMenuItem(
-                        value: s,
-                        child: Text(s),
-                      ))
+                  .map((s) => DropdownMenuItem(value: s, child: Text(s)))
                   .toList(),
               onChanged: (val) {
                 if (val != null) onChanged(val);

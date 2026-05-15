@@ -262,7 +262,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
       ),
     );
   }
-
+  // Helper method to build text fields
   Widget _buildTextField({
     required TextEditingController controller,
     required String hint,
